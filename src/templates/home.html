@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block head_title %}
+{{page_title}} - {{ block.super }}
+{% endblock head_title %}
+
+{% block content %}
+
+    {{ page_title }}
+
+    <p>Page Visited: {{ page_visit_count }}</p>
+    <p>Total Visited: {{ total_visit_count }}</p>
+    <p>Precent: {{ precent }}</p>
+
+
+{% endblock content %}
